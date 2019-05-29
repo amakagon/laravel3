@@ -1,0 +1,44 @@
+{
+    "name": "rem/billing-client",
+    "license": "proprietary",
+    "description": "Rem Billing Client",
+    "type": "library",
+    "homepage": "https://stash.code.rem.com/projects/LIBS/repos/rem-billing-client/browse",
+    "require": {
+        "rem/clients": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*",
+        "friendsofphp/php-cs-fixer": "^2.3"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.code.rem.com"
+        },
+        {
+            "type": "composer",
+            "url": "https://php.code.rem.com/rem"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "authors": [
+        {
+            "name": "Norbert Pabisz",
+            "email": "it150@rem.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rem\\BillingClient\\": "src/"
+        }
+    },
+    "suggest": {
+        "illuminate/contracts": "This will allow you to use RemBillingClientProvider and contract injection."
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
